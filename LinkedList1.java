@@ -42,6 +42,7 @@ public class LinkedList1 {
         }
         System.out.println("null");
     }
+
     public  void addAnyWhere(int index,int data){
         if(index==0){
             addFirst(data);
@@ -207,6 +208,46 @@ public class LinkedList1 {
         }
         return true;
     }
+    //find zig zag
+    public void zigZag(){
+
+        //find mid
+        Node slow =head;
+        Node fast = head.next;
+        while(fast!=null && fast.next!=null){
+            slow= slow.next;
+            fast = fast.next.next;
+        }
+        Node mid = slow;
+
+        //reverse
+
+        Node curr = mid.next;
+        mid.next =null;
+        Node prev = null;
+        Node next;
+        while(curr!=null){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        Node lH = head;
+        Node rH = prev;
+        Node lHNext;
+        Node rHNext;
+        while(lH !=null && rH != null){
+            lHNext = lH.next;
+            lH.next = rH;
+
+            rHNext = rH.next;
+            rH.next = lHNext; 
+
+            lH = lHNext;
+            rH = rHNext;
+        }
+
+    }
     public static void main(String[] args) {
         LinkedList1 ll = new LinkedList1();
         /*ll.addFirst(2);
@@ -234,11 +275,21 @@ public class LinkedList1 {
         // ll.deleteNthNodeFromEnd(2);
         // ll.prinTlinkedlist();
 
+        // ll.addLast(1);
+        // ll.addLast(2);
+        // ll.addLast(2);
+        // ll.addLast(1);
+        // System.out.println(ll.checkPalindrome());
+
         ll.addLast(1);
         ll.addLast(2);
-        ll.addLast(2);
-        ll.addLast(1);
-        System.out.println(ll.checkPalindrome());
+        ll.addLast(3);
+        ll.addLast(4);
+        ll.addLast(5);
+        ll.addLast(6);
+        ll.prinTlinkedlist();
+        ll.zigZag();
+        ll.prinTlinkedlist();
 
         
     }
