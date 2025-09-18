@@ -1,4 +1,4 @@
-class array{
+class array2{
     void pairs(int arr[]){ 
         for(int i= 0;i<arr.length;i++){
             int curr = arr[i];
@@ -16,7 +16,7 @@ class array{
 }
 public class array6Pairs {
     public static void main(String[] args) {
-        array a =new array();
+        array2 a =new array2();
         a.arr();
     }
 }

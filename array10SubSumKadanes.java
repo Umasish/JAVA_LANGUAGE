@@ -1,4 +1,3 @@
-
 class array{
     void subArraySum(int arr[]){
         int cs=0;

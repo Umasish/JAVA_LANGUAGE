@@ -1,5 +1,5 @@
 class array{
-    int trappedRainWater(int height[]){
+    int trappedRainWater(int height[]){ 
         //leftmax boundary-array
         int leftMax[] = new int [height.length];
         leftMax[0]=height[0];

@@ -1,4 +1,4 @@
-class array{
+class array1{
     void reverse(int arr[]){
         int first =0;int last = arr.length-1;
         while(first<last){
@@ -20,7 +20,7 @@ class array{
 }
 public class array5Reverse {
     public static void main(String[] args) {
-        array a =new array();
+        array1 a =new array1();
         a.arr();
     }
 }

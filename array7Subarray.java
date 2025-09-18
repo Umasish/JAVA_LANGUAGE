@@ -1,4 +1,4 @@
-class array{
+class array4{
     void subArray(int arr[]){ 
         for(int i= 0;i<arr.length;i++){
             int start=i;
@@ -20,7 +20,7 @@ class array{
 }
 public class array7Subarray {
     public static void main(String[] args) {
-        array a =new array();
+        array4 a =new array4();
         a.arr();
     }
 }

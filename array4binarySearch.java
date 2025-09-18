@@ -6,7 +6,7 @@ class array4{
         System.out.println("HOW MUCH NUMBER YOU WANT TO STORE IN YOUR ARRAY:");
         int num=sc.nextInt();
         int arr[]= new int [num];
-        System.out.println("enter your array element insorted");
+        System.out.println("enter your array element in sorted format ");
         for(int i=0;i<arr.length;i++){
             arr[i] = sc.nextInt();
         }

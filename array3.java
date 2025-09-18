@@ -1,4 +1,4 @@
-class findIndex{
+class findIndex1{
     int find(){
         int arr[] = {2,4,5,7,8,9} ;
         int largest=Integer.MIN_VALUE;
@@ -14,7 +14,7 @@ class findIndex{
 
 public class array3 {
     public static void main(String[] args) {
-        findIndex f = new findIndex();
+        findIndex1 f = new findIndex1();
         int result=f.find();
         System.out.println("Largest number is " + result);
         

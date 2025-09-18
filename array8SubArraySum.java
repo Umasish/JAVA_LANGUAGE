@@ -18,7 +18,7 @@ class array{
             }
             
         }
-        System.out.println("max sumis " + maxSum);
+        System.out.println("max sum is " + maxSum);
     }
     void arr(){
         int arr[] = {2,4,6,8};
