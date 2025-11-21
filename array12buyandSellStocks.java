@@ -1,4 +1,4 @@
-class array{
+class arrayStockBuy{
     int buyAndSellStocks(int prices[]){
         int buyPrice = Integer.MAX_VALUE;
         int maxProfit = 0;
@@ -16,7 +16,7 @@ class array{
 public class array12buyandSellStocks {
     public static void main(String[] args) {
         int prices[] = {7,1,5,3,6,4};
-        array a =new array();
+        arrayStockBuy a =new arrayStockBuy ();
         System.out.println(a.buyAndSellStocks(prices));
     }
 }

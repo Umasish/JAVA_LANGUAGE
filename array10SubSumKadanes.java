@@ -1,4 +1,4 @@
-class array{
+class arraykadanes{
     void subArraySum(int arr[]){
         int cs=0;
         int ms= Integer.MIN_VALUE;
@@ -35,7 +35,7 @@ class array{
 }
 public class array10SubSumKadanes {
     public static void main(String[] args) {
-        array a = new array();
+        arraykadanes a = new arraykadanes();
         a.arr();
     }
     

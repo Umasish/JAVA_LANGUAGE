@@ -1,4 +1,4 @@
-class array{
+class arraySubSum{
     void subArraySum(int arr[]){ 
         int currSum = 0;
         int maxSum = Integer.MIN_VALUE;
@@ -28,7 +28,7 @@ class array{
 }
 public class array8SubArraySum {
     public static void main(String[] args) {
-        array a =new array();
+        arraySubSum a =new arraySubSum();
         a.arr();
     }
 }

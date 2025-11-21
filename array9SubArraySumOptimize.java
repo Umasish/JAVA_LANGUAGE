@@ -1,4 +1,4 @@
-class array{
+class arraySubSumOptimize{
     void subArraySum(int arr[]){ 
         int currSum = 0;
         int maxSum = Integer.MIN_VALUE;
@@ -12,7 +12,7 @@ class array{
             int start=i;
             for(int j=i;j<arr.length;j++){
                 int end=j;
-                currSum= start == 0 ? prefix[end] : prefix[end] - prefix[start-1];
+                currSum = start == 0 ? prefix[end] : prefix[end] - prefix[start-1];
                 if(currSum>maxSum){
                     maxSum=currSum;
                 }
@@ -29,7 +29,7 @@ class array{
 }
 public class array9SubArraySumOptimize {
     public static void main(String[] args) {
-        array a =new array();
+        arraySubSumOptimize a =new arraySubSumOptimize();
         a.arr();
     }
 }
