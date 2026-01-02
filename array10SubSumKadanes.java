@@ -28,11 +28,11 @@ class arraykadanes{
         }
     }
     void arr(){
-        //int arr [] ={-2,-3,4,-1,-2,1,5,-3};
-        int arr [] ={-4,-2,-1};
+         int arr [] ={-2,-3,4,-1,-2,1,5,-3};
+        // int arr [] ={-4,-2,-1};
         subArraySum(arr);
     }
-}
+}  
 public class array10SubSumKadanes {
     public static void main(String[] args) {
         arraykadanes a = new arraykadanes();

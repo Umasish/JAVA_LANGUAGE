@@ -22,7 +22,7 @@ class arraySubSumOptimize{
         System.out.println("max sum is " + maxSum);
     }
     void arr(){
-        int arr[] = {1,-2,6,-1,3};
+        int arr[] = {1,2,3};
         subArraySum(arr);
 
     }

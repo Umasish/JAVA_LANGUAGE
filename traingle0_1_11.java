@@ -1,5 +1,5 @@
 
-class pattern{
+class pattern1{
     void traingle0_1(int row){
         //outer loop
         for(int i=1;i<=row;i++){
@@ -19,7 +19,7 @@ class pattern{
 
 public class traingle0_1_11 {
     public static void main(String[] args) {
-        pattern p = new pattern();
+        pattern1 p = new pattern1();
         p.traingle0_1(5);
     }
     
