@@ -110,23 +110,32 @@ public class LinkedList1 {
         return -1;
     }
 
-    public int helper(Node head,int key){
-        if(head==null){
+    // public int helper(Node head,int key){
+    //     if(head==null){
+    //         return -1;
+    //     }
+    //     if(head.data==key){
+    //         return 0;
+    //     }
+    //    int idx =  helper(head.next,key);
+    //    if(idx == -1){
+    //     return -1;
+    //    }
+
+    //    return idx+1;
+        
+    // }
+    public int recSearch(int key){
+        return helper(head,key , 0);
+    }
+    int helper(Node head , int key , int i){
+        if(head == null){
             return -1;
         }
-        if(head.data==key){
-            return 0;
+        if(head.data == key){
+            return i;
         }
-       int idx =  helper(head.next,key);
-       if(idx == -1){
-        return -1;
-       }
-
-       return idx+1;
-        
-    }
-    public int recSearch(int key){
-        return helper(head,key);
+        return helper(head.next, key, i+1);
     }
 
     //Reverse a linkedlist
@@ -250,13 +259,13 @@ public class LinkedList1 {
     }
     public static void main(String[] args) {
         LinkedList1 ll = new LinkedList1();
-        /*ll.addFirst(2);
+        ll.addFirst(2);
         ll.addFirst(1);
         ll.addLast(4);
         ll.addLast(5);
         ll.addAnyWhere(2, 3);
         ll.prinTlinkedlist();
-        */
+        
 
         //System.out.println(size);
 
@@ -267,7 +276,7 @@ public class LinkedList1 {
         //ll.prinTlinkedlist();
 
         // System.out.println(ll.linearSearch(4));
-        // System.out.println(ll.recSearch(4));
+        System.out.println(ll.recSearch(4));
 
         // ll.reverse();
         // ll.prinTlinkedlist();
@@ -281,15 +290,15 @@ public class LinkedList1 {
         // ll.addLast(1);
         // System.out.println(ll.checkPalindrome());
 
-        ll.addLast(1);
-        ll.addLast(2);
-        ll.addLast(3);
-        ll.addLast(4);
-        ll.addLast(5);
-        ll.addLast(6);
-        ll.prinTlinkedlist();
-        ll.zigZag();
-        ll.prinTlinkedlist();
+        // ll.addLast(1);
+        // ll.addLast(2);
+        // ll.addLast(3);
+        // ll.addLast(4);
+        // ll.addLast(5);
+        // ll.addLast(6);
+        // ll.prinTlinkedlist();
+        // ll.zigZag();
+        // ll.prinTlinkedlist();
 
         
     }
